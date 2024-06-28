@@ -1,17 +1,8 @@
-#include <iostream>
-#include "LU.hpp"
+#include<bits/stdc++.h>
+#include"NewtonRaphson.hpp"
 using namespace std;
-
 int main()
 {
-    Matrix matrix;
-
-    string MatrixFile = "input.txt";
-    matrix.ReadMatrixFromFile(MatrixFile);
-    matrix.PrintMatrix();
-    matrix.LUDecomposition();
-
-    matrix.LUDecompositionAndGetDeterminant();
-
-    return 0;
+    NewtonRaphson NR;
+    NR.Newton_Raphson();
 }
