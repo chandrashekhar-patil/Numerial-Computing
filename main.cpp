@@ -1,17 +1,12 @@
-#include <iostream>
-#include "Choleski.hpp"
-using namespace std;
+#include<bits/stdc++.h>
+#include"FixedPoint.hpp"
 
+using namespace std;
 int main()
 {
-    Matrix matrix;
+    FixedPoint Fx;
+   
 
-    string MatrixFile = "input.txt";
-    matrix.ReadMatrixFromFile(MatrixFile);
-    matrix.PrintMatrix();
-    matrix.CholeskyDecomposition();
+    Fx.RootFinding();
 
-    // matrix.PrintMatrix();
-
-    return 0;
 }
